@@ -4,7 +4,7 @@
 	--clr-base-500: #494949;
 	--clr-accent-100: #ffffff;
 	--clr-accent-400: #7e47c5;
-
+	--cle-bg-100: #f8f3ff;
 	--clr-ui-300: #f8e2ff;
 	--clr-ui-400: #580d3a;
 	--clr-ux-300: #e2ffea;
@@ -37,6 +37,7 @@ body {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	color: var(--clr-base-500);
+	background: var(--clr-bg-100);
 }
 h1 {
 	margin: 0;
@@ -100,6 +101,7 @@ header {
 	color: var(--clr-accent-100);
 	text-align: center;
 	padding: 1rem;
+	margin-bottom: 2rem;
 }
 
 /* +++++ MEMBER +++++ */
@@ -137,7 +139,9 @@ header {
 .member__role li {
 	display: inline-block;
 	border-radius: 0.75rem;
-	margin-right: 1rem;
+	margin-right: 0.5rem;
+	font-size: var(--fs-300);
+	padding: 0em 0.75rem;
 }
 .member__skill {
 	font-size: var(--fs-300);
