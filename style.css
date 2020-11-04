@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Podkova:wght@700&display=swap');
+:root {
+	--clr-base-400: #5e5e5e;
+	--clr-base-500: #494949;
+	--clr-accent-100: #ffffff;
+	--clr-accent-400: #7e47c5;
+
+	--clr-ui-300: #f8e2ff;
+	--clr-ui-400: #580d3a;
+	--clr-ux-300: #e2ffea;
+	--clr-ux-400: #115926;
+	--clr-dev-300: #e2fcff;
+	--clr-dev-400: #024f4f;
+
+	--ff-accent: 'Podkova', serif;
+	--ff-base: 'Open Sans', sans-serif;
+
+	--fw-400: 400;
+	--fw-700: 700;
+
+	--fs-300: 0.75rem;
+	--fs-400: 1rem;
+	--fs-500: 2.25rem;
+	--fs-700: 5rem;
+
+	--shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+	--border-radius: 0.75rem;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: var(--clr-base-500);
+}
+h1 {
+	margin: 0;
+	font-family: 'Podkova', serif;
+	font-size: var(--fs-700);
+}
+
+h2 {
+	margin: 0;
+	font-family: 'Podkova', serif;
+	font-size: var(--fs-500);
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+.ui {
+	color: var(--clr-ui-400);
+	background: var(--clr-ui-300);
+}
+
+.ux {
+	color: var(--clr-ux-400);
+	background: var(--clr-ux-300);
+}
+
+.dev {
+	color: var(--clr-dev-400);
+	background: var(--clr-dev-300);
+}
+
+.social-links--icons {
+	width: 1rem;
+}
+
+.flex-row {
+	display: flex;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+.cta-btn {
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 0.15rem;
+	padding: 0.8rem 0;
+	font-weight: var(--fw-700);
+	width: 7.5rem;
+	border-radius: 0.75rem;
+	background: var(--clr-accent-400);
+	color: var(--clr-accent-100);
+}
+/* +++++ HEADER +++++ */
+header {
+	height: 7.5625rem;
+	background: var(--clr-accent-400);
+	color: var(--clr-accent-100);
+	text-align: center;
+	padding: 1rem;
+}
+
+/* +++++ MEMBER +++++ */
+.member {
+	max-width: 83rem;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.member__card {
+	flex: 1 1 45%;
+	border-radius: 1rem;
+	background: var(--clr-accent-100);
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+	padding: 0.625rem;
+}
+.member__card footer {
+	justify-content: space-between;
+}
+.social-links {
+	display: flex;
+	width: 11.25rem;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.member__img {
+	width: 11.25rem;
+	height: 11.25rem;
+	border-radius: 0.75rem;
+	margin-right: 1rem;
+}
+.member__role li {
+	display: inline-block;
+	border-radius: 0.75rem;
+	margin-right: 1rem;
+}
+.member__skill {
+	font-size: var(--fs-300);
+}
